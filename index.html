@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MovieFinder</h1>
+        <p>Your gateway to the world of movies. Find details, watch trailers, and discover where to stream your favorite films.</p>
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Enter movie title..." oninput="suggestMovies()">
+            <button onclick="searchMovie()">Search</button>
+        </div>
+        <div id="suggestions"></div>
+    </header>
+    <main>
+        <section id="movieDetails" class="fade-in"></section>
+        <section id="trailer" class="fade-in"></section>
+    </main>
+    <footer>
+        <p class="developer-note">Developed by Adarsh. This project utilizes the OMDb API to fetch movie details and the YouTube API to fetch trailers.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
